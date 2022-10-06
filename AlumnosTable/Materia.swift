@@ -5,13 +5,15 @@
 //  Created by Alumno on 9/27/22.
 //  Copyright © 2022 Alumno. All rights reserved.
 //
-class Materia {
-    var nombre : String
-    var codigo: String
+class Ediciones {
+    var edicion : String
+    var editorial :String
+    var año: String
     
-    init(nombre: String, codigo: String)
+    init(edicion: String, editorial: String, año: String)
     {
-        self.nombre = nombre
-        self.codigo = codigo
+        self.edicion = edicion
+        self.editorial = editorial
+        self.año = año
     }
 }

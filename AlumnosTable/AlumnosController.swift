@@ -12,12 +12,12 @@ class AlumnosController: UIViewController, UITableViewDelegate, UITableViewDataS
 
     @IBOutlet weak var tvAlumnos: UITableView!
     var Alumnos : [Alumno] = []
-    var Materias1 : [Materia] = []
-    var Materias2 : [Materia] = []
+    var Ediciones1 : [Ediciones] = []
+    var Ediciones2 : [Ediciones] = []
     
     //Altura de celda
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 80
+        return 110
     }
     //Nùmero de secciones que tiene mi table view
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -45,17 +45,22 @@ class AlumnosController: UIViewController, UITableViewDelegate, UITableViewDataS
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        Materias1.append(Materia(nombre: "Calculo", codigo: "856199"))
-        Materias1.append(Materia(nombre: "Redes", codigo: "856198"))
-        Materias1.append(Materia(nombre: "Diosito", codigo: "666"))
+        Ediciones1.append(Ediciones(edicion: "1 en Ingles", editorial: "Bloomsbury", año: "1997"))
+        Ediciones1.append(Ediciones(edicion: "1 en Español", editorial: "Emecé", año: "1998"))
+        Ediciones1.append(Ediciones(edicion: "Bolsillo", editorial: "Salamandra", año: "2020"))
+        Ediciones1.append(Ediciones(edicion: "20 Aniversario", editorial: "Salamandra", año: "2018"))
         
-        Materias2.append(Materia(nombre: "Mexico", codigo: "856197"))
-        Materias2.append(Materia(nombre: "Diosito", codigo: "666"))
-        Materias2.append(Materia(nombre: "Moviles", codigo: "856191"))
+        Ediciones2.append(Ediciones(edicion: "1 en Ingles", editorial: "Bloomsbury", año: "1998"))
+        Ediciones2.append(Ediciones(edicion: "1 en Español", editorial: "Salamandra", año: "1999"))
+        Ediciones2.append(Ediciones(edicion: "Bolsillo", editorial: "Salamandra", año: "2020"))
+        Ediciones2.append(Ediciones(edicion: "20 Aniversario", editorial: "Salamandra", año: "2019"))
+   
         
         
-        Alumnos.append(Alumno(nombre: "Harry Potter y la Piedra Filosofal", año: "1997", genero: "Fantasía", autor: "J.K Rowling", materias: Materias1, paginas: "256", encuadernacion: "Tapa dura/Tapa blanda", copiasv: "120 Millones"))
-        Alumnos.append(Alumno(nombre: "Harry Potter y la Cámara Secreta", año: "1998", genero: "Fantasía", autor: "J.K Rowling", materias: Materias2, paginas: "288", encuadernacion: "Tapa dura/Tapa blanda", copiasv: "60 Milones"))
+        
+        Alumnos.append(Alumno(nombre: "Harry Potter y la Piedra Filosofal", año: "1997", genero: "Fantasía", autor: "J.K Rowling", ediciones: Ediciones1, paginas: "256", encuadernacion: "Tapa dura/Tapa blanda", copiasv: "120 Millones", precio: "$299"))
+        Alumnos.append(Alumno(nombre: "Harry Potter y la Cámara Secreta", año: "1998", genero: "Fantasía", autor: "J.K Rowling", ediciones: Ediciones2, paginas: "288", encuadernacion: "Tapa dura/Tapa blanda", copiasv: "60 Milones", precio: "$649"))
+        Alumnos.append(Alumno(nombre: "Cementerio de animales", año: "1983", genero: "Fantasía", autor: "Stephen King", ediciones: Ediciones2, paginas: "488", encuadernacion: "Tapa dura/Tapa blanda", copiasv: "60 Milones", precio: "$399"))
         
     }
     

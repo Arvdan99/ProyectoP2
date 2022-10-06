@@ -11,21 +11,23 @@ class Alumno {
     var año : String
     var genero : String
     var autor : String
-    var materias : [Materia]
+    var ediciones : [Ediciones]
     var paginas : String
     var encuadernacion : String
     var copiasv : String
+    var precio : String
     
 
-    init(nombre : String, año : String, genero : String, autor : String, materias : [Materia], paginas : String, encuadernacion : String, copiasv : String ){
+    init(nombre : String, año : String, genero : String, autor : String, ediciones : [Ediciones], paginas : String, encuadernacion : String, copiasv : String, precio : String ){
         self.nombre = nombre
         self.año = año
         self.genero = genero
         self.autor = autor
-        self.materias = materias
+        self.ediciones = ediciones
         self.paginas = paginas
         self.encuadernacion = encuadernacion
         self.copiasv = copiasv
+        self.precio = precio
 
     }
 }

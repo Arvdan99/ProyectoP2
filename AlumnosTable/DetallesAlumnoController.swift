@@ -19,6 +19,8 @@ class DetallesAlumnoController : UIViewController, UITableViewDelegate, UITableV
     @IBOutlet weak var lblPaginas: UILabel!
     @IBOutlet weak var lblEncuadernacion: UILabel!
     @IBOutlet weak var lblCopiasV: UILabel!
+    @IBOutlet weak var lblPrecio: UILabel!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -32,13 +34,14 @@ class DetallesAlumnoController : UIViewController, UITableViewDelegate, UITableV
             lblPaginas.text = alumno!.paginas
             lblEncuadernacion.text = alumno!.encuadernacion
             lblCopiasV.text = alumno!.copiasv
+            lblPrecio.text = alumno!.precio
             
         }else {
-            self.title = "Detalles de Alumnos"
+            self.title = "Libro"
         }
         
         
-        self.title = "Detales Alumno"
+        self.title = "Detalles Libro"
         
     }
     
@@ -53,14 +56,18 @@ class DetallesAlumnoController : UIViewController, UITableViewDelegate, UITableV
        
        //Numero de filas por seccion
        func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return alumno!.materias.count
+        return alumno!.ediciones.count
        }
        
        //Construye cada celda
        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
            let celda = tableView.dequeueReusableCell(withIdentifier: "celdaMateria") as? CeldaMateriaController
-           celda?.lblMateria.text = alumno!.materias[indexPath.row].nombre
-           celda?.lblCodigo.text = alumno!.materias[indexPath.row].codigo
+        
+           celda?.lblEdicion.text = alumno!.ediciones[indexPath.row].edicion
+           celda?.lblEditorial.text = alumno!.ediciones[indexPath.row].editorial
+           celda?.lblAño.text = alumno!.ediciones[indexPath.row].año
+        
+        
            return celda!
        }
     

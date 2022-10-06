@@ -13,4 +13,8 @@ class CeldaMateriaController : UITableViewCell{
     @IBOutlet weak var lblMateria: UILabel!
     @IBOutlet weak var lblCodigo: UILabel!
     
+    @IBOutlet weak var lblEdicion: UILabel!
+    @IBOutlet weak var lblEditorial: UILabel!
+    @IBOutlet weak var lblAño: UILabel!
+    
 }
