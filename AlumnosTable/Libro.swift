@@ -1,12 +1,12 @@
 //
-//  Alumno.swift
-//  AlumnosTable
+//  Libro.swift
+//  LibrosTable
 //
-//  Created by Alumno on 9/22/22.
-//  Copyright © 2022 Alumno. All rights reserved.
+//  Created by Libro on 9/22/22.
+//  Copyright © 2022 Libro. All rights reserved.
 //
 
-class Alumno {
+class Libro {
     var nombre : String
     var año : String
     var genero : String

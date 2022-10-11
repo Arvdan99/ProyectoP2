@@ -1,16 +1,16 @@
 //
-//  DetallesAlumnoController.swift
-//  AlumnosTable
+//  DetallesLibroController.swift
+//  LibrosTable
 //
-//  Created by Alumno on 9/27/22.
-//  Copyright © 2022 Alumno. All rights reserved.
+//  Created by Libro on 9/27/22.
+//  Copyright © 2022 Libro. All rights reserved.
 //
 
 import UIKit
 
-class DetallesAlumnoController : UIViewController, UITableViewDelegate, UITableViewDataSource{
+class DetallesLibroController : UIViewController, UITableViewDelegate, UITableViewDataSource{
     
-    var alumno : Alumno?
+    var Libro : Libro?
     
     @IBOutlet weak var lblNombre: UILabel!
     @IBOutlet weak var lblAutor: UILabel!
@@ -25,16 +25,16 @@ class DetallesAlumnoController : UIViewController, UITableViewDelegate, UITableV
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        if alumno != nil{
-            self.title = alumno!.nombre
-            lblAño.text = alumno!.año
-            lblNombre.text = alumno!.nombre
-            lblAutor.text = "\(alumno!.autor)"
-            lblGenero.text = alumno!.genero
-            lblPaginas.text = alumno!.paginas
-            lblEncuadernacion.text = alumno!.encuadernacion
-            lblCopiasV.text = alumno!.copiasv
-            lblPrecio.text = alumno!.precio
+        if Libro != nil{
+            self.title = Libro!.nombre
+            lblAño.text = Libro!.año
+            lblNombre.text = Libro!.nombre
+            lblAutor.text = "\(Libro!.autor)"
+            lblGenero.text = Libro!.genero
+            lblPaginas.text = Libro!.paginas
+            lblEncuadernacion.text = Libro!.encuadernacion
+            lblCopiasV.text = Libro!.copiasv
+            lblPrecio.text = Libro!.precio
             
         }else {
             self.title = "Libro"
@@ -56,16 +56,16 @@ class DetallesAlumnoController : UIViewController, UITableViewDelegate, UITableV
        
        //Numero de filas por seccion
        func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return alumno!.ediciones.count
+        return Libro!.ediciones.count
        }
        
        //Construye cada celda
        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-           let celda = tableView.dequeueReusableCell(withIdentifier: "celdaMateria") as? CeldaMateriaController
+           let celda = tableView.dequeueReusableCell(withIdentifier: "celdaEdicion") as? CeldaEdicionController
         
-           celda?.lblEdicion.text = alumno!.ediciones[indexPath.row].edicion
-           celda?.lblEditorial.text = alumno!.ediciones[indexPath.row].editorial
-           celda?.lblAño.text = alumno!.ediciones[indexPath.row].año
+           celda?.lblEdicion.text = Libro!.ediciones[indexPath.row].edicion
+           celda?.lblEditorial.text = Libro!.ediciones[indexPath.row].editorial
+           celda?.lblAño.text = Libro!.ediciones[indexPath.row].año
         
         
            return celda!

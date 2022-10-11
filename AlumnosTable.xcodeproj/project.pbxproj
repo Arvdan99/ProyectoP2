@@ -9,17 +9,17 @@
 /* Begin PBXBuildFile section */
 		3D36CF8D28DCB14500BF4A5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D36CF8C28DCB14500BF4A5E /* AppDelegate.swift */; };
 		3D36CF8F28DCB14500BF4A5E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D36CF8E28DCB14500BF4A5E /* SceneDelegate.swift */; };
-		3D36CF9128DCB14600BF4A5E /* AlumnosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D36CF9028DCB14600BF4A5E /* AlumnosController.swift */; };
+		3D36CF9128DCB14600BF4A5E /* LibrosController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D36CF9028DCB14600BF4A5E /* LibrosController.swift */; };
 		3D36CF9428DCB14600BF4A5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D36CF9228DCB14600BF4A5E /* Main.storyboard */; };
 		3D36CF9628DCB14D00BF4A5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D36CF9528DCB14D00BF4A5E /* Assets.xcassets */; };
 		3D36CF9928DCB14D00BF4A5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D36CF9728DCB14D00BF4A5E /* LaunchScreen.storyboard */; };
 		3D36CFA428DCB14D00BF4A5E /* AlumnosTableTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D36CFA328DCB14D00BF4A5E /* AlumnosTableTests.swift */; };
 		3D36CFAF28DCB14D00BF4A5E /* AlumnosTableUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D36CFAE28DCB14D00BF4A5E /* AlumnosTableUITests.swift */; };
-		3D36CFC128DCB28700BF4A5E /* Alumno.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D36CFC028DCB28700BF4A5E /* Alumno.swift */; };
-		3D36CFC328DCB60D00BF4A5E /* CeldaAlumnoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D36CFC228DCB60D00BF4A5E /* CeldaAlumnoController.swift */; };
-		3DF73FED28E341D100CC9753 /* DetallesAlumnoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF73FEC28E341D100CC9753 /* DetallesAlumnoController.swift */; };
-		3DF73FF328E354D700CC9753 /* Materia.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF73FF228E354D700CC9753 /* Materia.swift */; };
-		3DF73FF528E3589B00CC9753 /* CeldaMateriaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF73FF428E3589B00CC9753 /* CeldaMateriaController.swift */; };
+		3D36CFC128DCB28700BF4A5E /* Libro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D36CFC028DCB28700BF4A5E /* Libro.swift */; };
+		3D36CFC328DCB60D00BF4A5E /* CeldaLibroController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D36CFC228DCB60D00BF4A5E /* CeldaLibroController.swift */; };
+		3DF73FED28E341D100CC9753 /* DetallesLibroController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF73FEC28E341D100CC9753 /* DetallesLibroController.swift */; };
+		3DF73FF328E354D700CC9753 /* Edicion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF73FF228E354D700CC9753 /* Edicion.swift */; };
+		3DF73FF528E3589B00CC9753 /* CeldaEdicionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF73FF428E3589B00CC9753 /* CeldaEdicionController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +43,7 @@
 		3D36CF8928DCB14500BF4A5E /* AlumnosTable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlumnosTable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D36CF8C28DCB14500BF4A5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3D36CF8E28DCB14500BF4A5E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		3D36CF9028DCB14600BF4A5E /* AlumnosController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlumnosController.swift; sourceTree = "<group>"; };
+		3D36CF9028DCB14600BF4A5E /* LibrosController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibrosController.swift; sourceTree = "<group>"; };
 		3D36CF9328DCB14600BF4A5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3D36CF9528DCB14D00BF4A5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3D36CF9828DCB14D00BF4A5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -54,11 +54,11 @@
 		3D36CFAA28DCB14D00BF4A5E /* AlumnosTableUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlumnosTableUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D36CFAE28DCB14D00BF4A5E /* AlumnosTableUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlumnosTableUITests.swift; sourceTree = "<group>"; };
 		3D36CFB028DCB14D00BF4A5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3D36CFC028DCB28700BF4A5E /* Alumno.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Alumno.swift; sourceTree = "<group>"; };
-		3D36CFC228DCB60D00BF4A5E /* CeldaAlumnoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaAlumnoController.swift; sourceTree = "<group>"; };
-		3DF73FEC28E341D100CC9753 /* DetallesAlumnoController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetallesAlumnoController.swift; sourceTree = "<group>"; };
-		3DF73FF228E354D700CC9753 /* Materia.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Materia.swift; sourceTree = "<group>"; };
-		3DF73FF428E3589B00CC9753 /* CeldaMateriaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaMateriaController.swift; sourceTree = "<group>"; };
+		3D36CFC028DCB28700BF4A5E /* Libro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Libro.swift; sourceTree = "<group>"; };
+		3D36CFC228DCB60D00BF4A5E /* CeldaLibroController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaLibroController.swift; sourceTree = "<group>"; };
+		3DF73FEC28E341D100CC9753 /* DetallesLibroController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetallesLibroController.swift; sourceTree = "<group>"; };
+		3DF73FF228E354D700CC9753 /* Edicion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Edicion.swift; sourceTree = "<group>"; };
+		3DF73FF428E3589B00CC9753 /* CeldaEdicionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaEdicionController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,12 +138,12 @@
 		3D36CFBC28DCB1A700BF4A5E /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				3D36CF9028DCB14600BF4A5E /* AlumnosController.swift */,
-				3D36CFC028DCB28700BF4A5E /* Alumno.swift */,
-				3DF73FEC28E341D100CC9753 /* DetallesAlumnoController.swift */,
-				3D36CFC228DCB60D00BF4A5E /* CeldaAlumnoController.swift */,
-				3DF73FF228E354D700CC9753 /* Materia.swift */,
-				3DF73FF428E3589B00CC9753 /* CeldaMateriaController.swift */,
+				3D36CF9028DCB14600BF4A5E /* LibrosController.swift */,
+				3D36CFC028DCB28700BF4A5E /* Libro.swift */,
+				3DF73FEC28E341D100CC9753 /* DetallesLibroController.swift */,
+				3D36CFC228DCB60D00BF4A5E /* CeldaLibroController.swift */,
+				3DF73FF228E354D700CC9753 /* Edicion.swift */,
+				3DF73FF428E3589B00CC9753 /* CeldaEdicionController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -306,14 +306,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3D36CF9128DCB14600BF4A5E /* AlumnosController.swift in Sources */,
-				3DF73FED28E341D100CC9753 /* DetallesAlumnoController.swift in Sources */,
-				3DF73FF328E354D700CC9753 /* Materia.swift in Sources */,
+				3D36CF9128DCB14600BF4A5E /* LibrosController.swift in Sources */,
+				3DF73FED28E341D100CC9753 /* DetallesLibroController.swift in Sources */,
+				3DF73FF328E354D700CC9753 /* Edicion.swift in Sources */,
 				3D36CF8D28DCB14500BF4A5E /* AppDelegate.swift in Sources */,
 				3D36CF8F28DCB14500BF4A5E /* SceneDelegate.swift in Sources */,
-				3D36CFC128DCB28700BF4A5E /* Alumno.swift in Sources */,
-				3D36CFC328DCB60D00BF4A5E /* CeldaAlumnoController.swift in Sources */,
-				3DF73FF528E3589B00CC9753 /* CeldaMateriaController.swift in Sources */,
+				3D36CFC128DCB28700BF4A5E /* Libro.swift in Sources */,
+				3D36CFC328DCB60D00BF4A5E /* CeldaLibroController.swift in Sources */,
+				3DF73FF528E3589B00CC9753 /* CeldaEdicionController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

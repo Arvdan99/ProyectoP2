@@ -1,9 +1,9 @@
 //
-//  Materia.swift
-//  AlumnosTable
+//  Edicion.swift
+//  LibrosTable
 //
-//  Created by Alumno on 9/27/22.
-//  Copyright © 2022 Alumno. All rights reserved.
+//  Created by Libro on 9/27/22.
+//  Copyright © 2022 Libro. All rights reserved.
 //
 class Ediciones {
     var edicion : String

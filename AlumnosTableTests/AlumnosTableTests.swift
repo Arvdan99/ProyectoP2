@@ -1,15 +1,15 @@
 //
-//  AlumnosTableTests.swift
-//  AlumnosTableTests
+//  LibrosTableTests.swift
+//  LibrosTableTests
 //
-//  Created by Alumno on 9/22/22.
-//  Copyright © 2022 Alumno. All rights reserved.
+//  Created by Libro on 9/22/22.
+//  Copyright © 2022 Libro. All rights reserved.
 //
 
 import XCTest
-@testable import AlumnosTable
+@testable import LibrosTable
 
-class AlumnosTableTests: XCTestCase {
+class LibrosTableTests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.

@@ -1,9 +1,9 @@
 //
 //  SceneDelegate.swift
-//  AlumnosTable
+//  LibrosTable
 //
-//  Created by Alumno on 9/22/22.
-//  Copyright © 2022 Alumno. All rights reserved.
+//  Created by Libro on 9/22/22.
+//  Copyright © 2022 Libro. All rights reserved.
 //
 
 import UIKit
