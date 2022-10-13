@@ -17,6 +17,8 @@
 		3D36CFAF28DCB14D00BF4A5E /* AlumnosTableUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D36CFAE28DCB14D00BF4A5E /* AlumnosTableUITests.swift */; };
 		3D36CFC128DCB28700BF4A5E /* Libro.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D36CFC028DCB28700BF4A5E /* Libro.swift */; };
 		3D36CFC328DCB60D00BF4A5E /* CeldaLibroController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D36CFC228DCB60D00BF4A5E /* CeldaLibroController.swift */; };
+		3DB90C3E28F85FBE00D30550 /* Imperator.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3DB90C3D28F85FBD00D30550 /* Imperator.ttf */; };
+		3DB90C4028F85FD900D30550 /* Imperator Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3DB90C3F28F85FD900D30550 /* Imperator Bold.ttf */; };
 		3DF73FED28E341D100CC9753 /* DetallesLibroController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF73FEC28E341D100CC9753 /* DetallesLibroController.swift */; };
 		3DF73FF328E354D700CC9753 /* Edicion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF73FF228E354D700CC9753 /* Edicion.swift */; };
 		3DF73FF528E3589B00CC9753 /* CeldaEdicionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DF73FF428E3589B00CC9753 /* CeldaEdicionController.swift */; };
@@ -56,6 +58,8 @@
 		3D36CFB028DCB14D00BF4A5E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D36CFC028DCB28700BF4A5E /* Libro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Libro.swift; sourceTree = "<group>"; };
 		3D36CFC228DCB60D00BF4A5E /* CeldaLibroController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaLibroController.swift; sourceTree = "<group>"; };
+		3DB90C3D28F85FBD00D30550 /* Imperator.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Imperator.ttf; sourceTree = "<group>"; };
+		3DB90C3F28F85FD900D30550 /* Imperator Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Imperator Bold.ttf"; sourceTree = "<group>"; };
 		3DF73FEC28E341D100CC9753 /* DetallesLibroController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetallesLibroController.swift; sourceTree = "<group>"; };
 		3DF73FF228E354D700CC9753 /* Edicion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Edicion.swift; sourceTree = "<group>"; };
 		3DF73FF428E3589B00CC9753 /* CeldaEdicionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaEdicionController.swift; sourceTree = "<group>"; };
@@ -93,6 +97,8 @@
 				3D36CFA228DCB14D00BF4A5E /* AlumnosTableTests */,
 				3D36CFAD28DCB14D00BF4A5E /* AlumnosTableUITests */,
 				3D36CF8A28DCB14500BF4A5E /* Products */,
+				3DB90C3D28F85FBD00D30550 /* Imperator.ttf */,
+				3DB90C3F28F85FD900D30550 /* Imperator Bold.ttf */,
 			);
 			sourceTree = "<group>";
 		};
@@ -279,9 +285,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DB90C3E28F85FBE00D30550 /* Imperator.ttf in Resources */,
 				3D36CF9928DCB14D00BF4A5E /* LaunchScreen.storyboard in Resources */,
 				3D36CF9628DCB14D00BF4A5E /* Assets.xcassets in Resources */,
 				3D36CF9428DCB14600BF4A5E /* Main.storyboard in Resources */,
+				3DB90C4028F85FD900D30550 /* Imperator Bold.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

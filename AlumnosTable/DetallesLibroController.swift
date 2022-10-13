@@ -21,6 +21,8 @@ class DetallesLibroController : UIViewController, UITableViewDelegate, UITableVi
     @IBOutlet weak var lblCopiasV: UILabel!
     @IBOutlet weak var lblPrecio: UILabel!
     
+    @IBOutlet weak var Image2: UIImageView!
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,7 +37,9 @@ class DetallesLibroController : UIViewController, UITableViewDelegate, UITableVi
             lblEncuadernacion.text = Libro!.encuadernacion
             lblCopiasV.text = Libro!.copiasv
             lblPrecio.text = Libro!.precio
+            Image2.image = UIImage(named: Libro!.imagen2)
             
+    
         }else {
             self.title = "Libro"
         }

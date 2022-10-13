@@ -16,9 +16,11 @@ class Libro {
     var encuadernacion : String
     var copiasv : String
     var precio : String
+    var imagen : String
+    var imagen2 : String
     
 
-    init(nombre : String, año : String, genero : String, autor : String, ediciones : [Ediciones], paginas : String, encuadernacion : String, copiasv : String, precio : String ){
+    init(nombre : String, año : String, genero : String, autor : String, ediciones : [Ediciones], paginas : String, encuadernacion : String, copiasv : String, precio : String, imagen : String, imagen2 : String ){
         self.nombre = nombre
         self.año = año
         self.genero = genero
@@ -28,6 +30,8 @@ class Libro {
         self.encuadernacion = encuadernacion
         self.copiasv = copiasv
         self.precio = precio
+        self.imagen = imagen
+        self.imagen2 = imagen2
 
     }
 }

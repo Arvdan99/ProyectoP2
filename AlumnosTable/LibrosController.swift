@@ -21,7 +21,7 @@ class LibrosController: UIViewController, UITableViewDelegate, UITableViewDataSo
     
     //Altura de celda
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 110
+        return 120
     }
     //Nùmero de secciones que tiene mi table view
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -40,6 +40,14 @@ class LibrosController: UIViewController, UITableViewDelegate, UITableViewDataSo
         celda?.lblAño.text = Libros[indexPath.row].año
         celda?.lblGenero.text = Libros[indexPath.row].genero
         celda?.lblAutor.text = Libros[indexPath.row].autor
+        celda?.image1.image = UIImage(named: Libros[indexPath.row].imagen)
+        
+        
+        celda?.image1.layer.cornerRadius = 10
+        celda?.image1.clipsToBounds = true
+        celda?.image1.layer.borderWidth = 2
+        //celda?.image1.layer.backgroundColor = UIColor.blue.cgColor
+        
         return celda!
     }
     
@@ -81,13 +89,13 @@ class LibrosController: UIViewController, UITableViewDelegate, UITableViewDataSo
         
         
         
-        Libros.append(Libro(nombre: "Harry Potter y la Piedra Filosofal", año: "1997", genero: "Fantasía", autor: "J.K Rowling", ediciones: Ediciones1, paginas: "256", encuadernacion: "Tapa dura/Tapa blanda", copiasv: "120 Millones", precio: "$299"))
-        Libros.append(Libro(nombre: "Harry Potter y la Cámara Secreta", año: "1998", genero: "Fantasía", autor: "J.K Rowling", ediciones: Ediciones2, paginas: "288", encuadernacion: "Tapa dura/Tapa blanda", copiasv: "60 Milones", precio: "$649"))
-        Libros.append(Libro(nombre: "Cementerio de animales", año: "1983", genero: "Terror", autor: "Stephen King", ediciones: Ediciones3, paginas: "488", encuadernacion: "Tapa dura/Tapa blanda", copiasv: "40 Milones", precio: "$399"))
-        Libros.append(Libro(nombre: "El resplandor", año: "1977", genero: "Terror", autor: "Stephen King", ediciones: Ediciones4, paginas: "643", encuadernacion: "Tapa dura/Tapa blanda", copiasv: "350 Milones", precio: "$499"))
-         Libros.append(Libro(nombre: "Marcar como no leído", año: "2018", genero: "Autobiografico", autor: "Zpu", ediciones: Ediciones5, paginas: "244", encuadernacion: "Tapa blanda", copiasv: "300 mil", precio: "265"))
-        Libros.append(Libro(nombre: "QUE. TE. JODAN.", año: "2018", genero: "Poesia", autor: "Soma", ediciones: Ediciones6, paginas: "120", encuadernacion: "Tapa blanda", copiasv: "200 mil", precio: "300"))
-        Libros.append(Libro(nombre: "Casino Royale", año: "1953", genero: "Espionaje", autor: "Ian Fleming", ediciones: Ediciones6, paginas: "120", encuadernacion: "Tapa blanda", copiasv: "200 mil", precio: "300"))
+        Libros.append(Libro(nombre: "Harry Potter y la Piedra Filosofal", año: "1997", genero: "Fantasía", autor: "J.K Rowling", ediciones: Ediciones1, paginas: "256", encuadernacion: "Tapa dura/Tapa blanda", copiasv: "120 Millones", precio: "$299", imagen: "PiedraFilosofal", imagen2: "PiedraFilosofal1"))
+        Libros.append(Libro(nombre: "Harry Potter y la Cámara Secreta", año: "1998", genero: "Fantasía", autor: "J.K Rowling", ediciones: Ediciones2, paginas: "288", encuadernacion: "Tapa dura/Tapa blanda", copiasv: "60 Milones", precio: "$649", imagen: "CamaraSecreta", imagen2: "CamaraSecreta2"))
+        Libros.append(Libro(nombre: "Cementerio de animales", año: "1983", genero: "Terror", autor: "Stephen King", ediciones: Ediciones3, paginas: "488", encuadernacion: "Tapa dura/Tapa blanda", copiasv: "40 Milones", precio: "$399", imagen: "CementerioA", imagen2: "CementerioA2"))
+        Libros.append(Libro(nombre: "El resplandor", año: "1977", genero: "Terror", autor: "Stephen King", ediciones: Ediciones4, paginas: "643", encuadernacion: "Tapa dura/Tapa blanda", copiasv: "350 Milones", precio: "$499", imagen: "Resplandor", imagen2: "Resplandor2"))
+        Libros.append(Libro(nombre: "Marcar como no leído", año: "2018", genero: "Autobiografico", autor: "Zpu", ediciones: Ediciones5, paginas: "244", encuadernacion: "Tapa blanda", copiasv: "300 mil", precio: "265", imagen: "NoLeido", imagen2: "NoleidoZpu"))
+        Libros.append(Libro(nombre: "QUE. TE. JODAN.", año: "2018", genero: "Poesia", autor: "Soma", ediciones: Ediciones6, paginas: "120", encuadernacion: "Tapa blanda", copiasv: "200 mil", precio: "300", imagen: "Soma", imagen2: "Soma2"))
+        Libros.append(Libro(nombre: "Casino Royale", año: "1953", genero: "Espionaje", autor: "Ian Fleming", ediciones: Ediciones6, paginas: "120", encuadernacion: "Tapa blanda", copiasv: "200 mil", precio: "300", imagen: "CasinoR1", imagen2: "CasinoR"))
         
     }
     
