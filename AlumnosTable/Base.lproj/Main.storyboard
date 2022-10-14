@@ -42,7 +42,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zLp-4U-kqL">
-                                <rect key="frame" x="0.0" y="88" width="414" height="808"/>
+                                <rect key="frame" x="0.0" y="88" width="414" height="774"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="celdaLibro" rowHeight="126" id="slW-LG-1A1" customClass="CeldaLibroController" customModule="AlumnosTable" customModuleProvider="target">
@@ -52,23 +52,20 @@
                                             <rect key="frame" x="0.0" y="0.0" width="414" height="126"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nombre" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tI7-U4-DUz">
-                                                    <rect key="frame" x="20" y="11" width="374" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nombre" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tI7-U4-DUz">
+                                                    <rect key="frame" x="20" y="11" width="69.5" height="22"/>
                                                     <fontDescription key="fontDescription" name="Imperator-Bold" family="Imperator" pointSize="19"/>
                                                     <color key="textColor" red="0.82736045122146606" green="0.82750314474105835" blue="0.82735145092010498" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Año" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fXU-Ne-dFN">
-                                                    <rect key="frame" x="20" y="62" width="138" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Año" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fXU-Ne-dFN">
+                                                    <rect key="frame" x="20" y="63.5" width="33.5" height="20"/>
                                                     <fontDescription key="fontDescription" name="Imperator" family="Imperator" pointSize="17"/>
                                                     <color key="textColor" red="0.82736045120000001" green="0.82750314469999997" blue="0.82735145089999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Autor" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OeK-PQ-ZIh">
-                                                    <rect key="frame" x="20" y="37" width="105" height="21"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Autor" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OeK-PQ-ZIh">
+                                                    <rect key="frame" x="20" y="38" width="44" height="20"/>
                                                     <fontDescription key="fontDescription" name="Imperator" family="Imperator" pointSize="17"/>
                                                     <color key="textColor" red="0.82736045120000001" green="0.82750314469999997" blue="0.82735145089999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
@@ -80,12 +77,26 @@
                                                     <color key="textColor" red="0.82736045120000001" green="0.82750314469999997" blue="0.82735145089999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Mge-gC-QwE">
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Mge-gC-QwE">
                                                     <rect key="frame" x="313" y="30" width="63" height="89"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="89" id="JDk-Th-ao9"/>
+                                                        <constraint firstAttribute="width" constant="63" id="YoB-mk-597"/>
+                                                    </constraints>
                                                 </imageView>
                                             </subviews>
                                             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <constraints>
+                                                <constraint firstItem="fXU-Ne-dFN" firstAttribute="top" secondItem="OeK-PQ-ZIh" secondAttribute="bottom" constant="5.3300000000000001" id="2JA-rJ-bP0"/>
+                                                <constraint firstItem="Mge-gC-QwE" firstAttribute="top" secondItem="OiB-tA-CeU" secondAttribute="top" constant="30" id="PgR-I9-Qwd"/>
+                                                <constraint firstItem="tI7-U4-DUz" firstAttribute="leading" secondItem="OiB-tA-CeU" secondAttribute="leadingMargin" id="Zh7-3Q-E6z"/>
+                                                <constraint firstItem="fXU-Ne-dFN" firstAttribute="leading" secondItem="OiB-tA-CeU" secondAttribute="leadingMargin" id="giE-fx-Gbn"/>
+                                                <constraint firstItem="OeK-PQ-ZIh" firstAttribute="top" secondItem="tI7-U4-DUz" secondAttribute="bottom" constant="5" id="kOS-fq-tqK"/>
+                                                <constraint firstItem="tI7-U4-DUz" firstAttribute="top" secondItem="OiB-tA-CeU" secondAttribute="topMargin" id="nMt-xQ-Uj8"/>
+                                                <constraint firstAttribute="bottom" secondItem="Mge-gC-QwE" secondAttribute="bottom" constant="7" id="uXS-Qf-4BE"/>
+                                                <constraint firstItem="OeK-PQ-ZIh" firstAttribute="leading" secondItem="OiB-tA-CeU" secondAttribute="leadingMargin" id="wXt-n9-gIG"/>
+                                                <constraint firstAttribute="trailing" secondItem="Mge-gC-QwE" secondAttribute="trailing" constant="38" id="xZ9-rE-puL"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="image1" destination="Mge-gC-QwE" id="b1Z-0s-YRT"/>
@@ -105,10 +116,10 @@
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="zLp-4U-kqL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="8dm-i6-JDc"/>
-                            <constraint firstItem="zLp-4U-kqL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="B8r-7Z-JO6"/>
-                            <constraint firstItem="zLp-4U-kqL" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Qhj-cq-t4i"/>
-                            <constraint firstAttribute="bottom" secondItem="zLp-4U-kqL" secondAttribute="bottom" id="YuU-uX-OhY"/>
+                            <constraint firstItem="zLp-4U-kqL" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="KUU-t2-e3I"/>
+                            <constraint firstItem="zLp-4U-kqL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="N8e-7G-Vop"/>
+                            <constraint firstItem="zLp-4U-kqL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="SLW-4d-R5u"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="zLp-4U-kqL" secondAttribute="bottom" id="uM5-95-xzb"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
@@ -129,43 +140,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Autor" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ynm-MT-AzI">
-                                <rect key="frame" x="33" y="310" width="44" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Imperator" family="Imperator" pointSize="17"/>
-                                <color key="textColor" red="0.82736045120000001" green="0.82750314469999997" blue="0.82735145089999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Año" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Kd6-qQ-fQq">
-                                <rect key="frame" x="33" y="339" width="31" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.82736045120000001" green="0.82750314469999997" blue="0.82735145089999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Genero" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A3M-UZ-BQ1">
-                                <rect key="frame" x="33" y="368" width="55" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Imperator" family="Imperator" pointSize="17"/>
-                                <color key="textColor" red="0.82736045120000001" green="0.82750314469999997" blue="0.82735145089999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Valor de la edad" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qgJ-qM-lIv">
-                                <rect key="frame" x="205" y="310" width="198" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Imperator" family="Imperator" pointSize="17"/>
-                                <color key="textColor" red="0.82736045120000001" green="0.82750314469999997" blue="0.82735145089999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Valor de la matricula" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LXH-Da-ZFv">
-                                <rect key="frame" x="206" y="339" width="151" height="20"/>
+                                <rect key="frame" x="33" y="368" width="54.5" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Imperator" family="Imperator" pointSize="17"/>
                                 <color key="textColor" red="0.82736045120000001" green="0.82750314469999997" blue="0.82735145089999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Valor de la carrera" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oGf-JH-QUf">
-                                <rect key="frame" x="206" y="368" width="136" height="20"/>
+                                <rect key="frame" x="205.5" y="368.5" width="135.5" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Imperator" family="Imperator" pointSize="17"/>
                                 <color key="textColor" red="0.82736045120000001" green="0.82750314469999997" blue="0.82735145089999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -233,29 +216,15 @@
                                 <color key="textColor" red="0.82736045120000001" green="0.82750314469999997" blue="0.82735145089999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Nombre" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TKf-Ji-MR9">
-                                <rect key="frame" x="33" y="264" width="60" height="20"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Imperator" family="Imperator" pointSize="17"/>
-                                <color key="textColor" red="0.82736045120000001" green="0.82750314469999997" blue="0.82735145089999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Valor del Nombre                      fdggfhghhgjjh" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cvy-eP-sRA">
-                                <rect key="frame" x="206" y="250" width="208" height="68"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Imperator" family="Imperator" pointSize="17"/>
-                                <color key="textColor" red="0.82736045120000001" green="0.82750314469999997" blue="0.82735145089999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="No. Paginas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mjZ-hh-Blp">
-                                <rect key="frame" x="33" y="397" width="84" height="20"/>
+                                <rect key="frame" x="33" y="397" width="83.5" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Imperator" family="Imperator" pointSize="17"/>
                                 <color key="textColor" red="0.82736045120000001" green="0.82750314469999997" blue="0.82735145089999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Valor de las paginas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DbJ-tf-VhN">
-                                <rect key="frame" x="206" y="397" width="144" height="20"/>
+                                <rect key="frame" x="205.5" y="397.5" width="144" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Imperator" family="Imperator" pointSize="17"/>
                                 <color key="textColor" red="0.82736045120000001" green="0.82750314469999997" blue="0.82735145089999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -269,35 +238,35 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Valor encuadernacion" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cgT-b7-pWK">
-                                <rect key="frame" x="205" y="426" width="198" height="21"/>
+                                <rect key="frame" x="205" y="426.5" width="159.5" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Imperator" family="Imperator" pointSize="17"/>
                                 <color key="textColor" red="0.82736045120000001" green="0.82750314469999997" blue="0.82735145089999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Valor copias" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TI5-Pe-dU2">
-                                <rect key="frame" x="206" y="455" width="169" height="21"/>
+                                <rect key="frame" x="205.5" y="455.5" width="89" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Imperator" family="Imperator" pointSize="17"/>
                                 <color key="textColor" red="0.82736045120000001" green="0.82750314469999997" blue="0.82735145089999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Precio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ks3-IN-0ha">
-                                <rect key="frame" x="33" y="482" width="47" height="20"/>
+                                <rect key="frame" x="33" y="484" width="46.5" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Imperator" family="Imperator" pointSize="17"/>
                                 <color key="textColor" red="0.82736045120000001" green="0.82750314469999997" blue="0.82735145089999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Valor precio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kA0-4R-mP2">
-                                <rect key="frame" x="206" y="482" width="89" height="20"/>
+                                <rect key="frame" x="205.5" y="484.5" width="89" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Imperator" family="Imperator" pointSize="17"/>
                                 <color key="textColor" red="0.82736045120000001" green="0.82750314469999997" blue="0.82735145089999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Copias Vendidas" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dfY-Eb-M8k">
-                                <rect key="frame" x="32" y="455" width="122" height="20"/>
+                                <rect key="frame" x="32" y="455" width="121.5" height="20"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="Imperator" family="Imperator" pointSize="17"/>
                                 <color key="textColor" red="0.82736045120000001" green="0.82750314469999997" blue="0.82735145089999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -310,19 +279,44 @@
                                 <color key="textColor" red="0.82736045120000001" green="0.82750314469999997" blue="0.82735145089999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="nth-Ib-hBZ">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="nth-Ib-hBZ">
                                 <rect key="frame" x="87" y="101" width="240" height="128"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="Ndz-RN-X4c"/>
+                                    <constraint firstAttribute="height" constant="128" id="eOT-Rf-slZ"/>
+                                </constraints>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Valor del Nombre    " textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cvy-eP-sRA">
+                                <rect key="frame" x="116" y="248" width="182" height="24.5"/>
+                                <fontDescription key="fontDescription" name="Imperator" family="Imperator" pointSize="21"/>
+                                <color key="textColor" red="0.82736045120000001" green="0.82750314469999997" blue="0.82735145089999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Valor de autor" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qgJ-qM-lIv">
+                                <rect key="frame" x="161" y="275" width="92" height="18"/>
+                                <fontDescription key="fontDescription" name="Imperator" family="Imperator" pointSize="15"/>
+                                <color key="textColor" red="0.82736045120000001" green="0.82750314469999997" blue="0.82735145089999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <color key="tintColor" red="0.82736045120000001" green="0.82750314469999997" blue="0.82735145089999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="cvy-eP-sRA" firstAttribute="leading" secondItem="Val-IY-9AP" secondAttribute="leading" constant="116" id="61z-DX-DHN"/>
+                            <constraint firstItem="nth-Ib-hBZ" firstAttribute="leading" secondItem="Val-IY-9AP" secondAttribute="leading" constant="87" id="7Mj-DI-BOg"/>
+                            <constraint firstItem="Val-IY-9AP" firstAttribute="trailing" secondItem="nth-Ib-hBZ" secondAttribute="trailing" constant="87" id="T9t-XU-LZb"/>
+                            <constraint firstItem="Val-IY-9AP" firstAttribute="trailing" secondItem="cvy-eP-sRA" secondAttribute="trailing" constant="116" id="VVf-Am-dQv"/>
+                            <constraint firstItem="cvy-eP-sRA" firstAttribute="centerX" secondItem="ww4-Re-B57" secondAttribute="centerX" id="ljG-KU-UJE"/>
+                            <constraint firstItem="qgJ-qM-lIv" firstAttribute="top" secondItem="cvy-eP-sRA" secondAttribute="bottom" constant="2.5" id="ncm-u7-yog"/>
+                            <constraint firstItem="cvy-eP-sRA" firstAttribute="top" secondItem="nth-Ib-hBZ" secondAttribute="bottom" constant="19" id="o1e-14-vud"/>
+                            <constraint firstItem="nth-Ib-hBZ" firstAttribute="top" secondItem="Val-IY-9AP" secondAttribute="top" constant="13" id="pDw-Vz-nMr"/>
+                            <constraint firstItem="qgJ-qM-lIv" firstAttribute="centerX" secondItem="ww4-Re-B57" secondAttribute="centerX" id="xaE-o3-lqo"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="Val-IY-9AP"/>
                     </view>
                     <navigationItem key="navigationItem" id="ncv-D3-cE0"/>
                     <connections>
                         <outlet property="Image2" destination="nth-Ib-hBZ" id="NAI-1p-U69"/>
-                        <outlet property="lblAño" destination="LXH-Da-ZFv" id="V1p-oE-5AZ"/>
                         <outlet property="lblAutor" destination="qgJ-qM-lIv" id="lCu-2Z-wMP"/>
                         <outlet property="lblCopiasV" destination="TI5-Pe-dU2" id="bYi-jE-qKP"/>
                         <outlet property="lblEncuadernacion" destination="cgT-b7-pWK" id="XwK-Fq-2zy"/>

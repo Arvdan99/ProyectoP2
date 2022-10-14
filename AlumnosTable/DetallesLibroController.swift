@@ -29,9 +29,9 @@ class DetallesLibroController : UIViewController, UITableViewDelegate, UITableVi
         
         if Libro != nil{
             self.title = Libro!.nombre
-            lblAño.text = Libro!.año
+            //lblAño.text = Libro!.año
             lblNombre.text = Libro!.nombre
-            lblAutor.text = "\(Libro!.autor)"
+            lblAutor.text = "\(Libro!.autor) (\(Libro!.año))"
             lblGenero.text = Libro!.genero
             lblPaginas.text = Libro!.paginas
             lblEncuadernacion.text = Libro!.encuadernacion
