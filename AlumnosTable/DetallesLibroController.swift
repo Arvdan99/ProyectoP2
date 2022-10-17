@@ -39,6 +39,13 @@ class DetallesLibroController : UIViewController, UITableViewDelegate, UITableVi
             lblPrecio.text = Libro!.precio
             Image2.image = UIImage(named: Libro!.imagen2)
             
+            Image2.layer.cornerRadius = 10
+            Image2.clipsToBounds = true
+            Image2.layer.borderWidth = 2
+    
+                   
+        
+            
     
         }else {
             self.title = "Libro"
