@@ -58,7 +58,7 @@ class DetallesLibroController : UIViewController, UITableViewDelegate, UITableVi
     
     //Altura de celda
        func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-           return 80
+           return 60
        }
        //Nùmero de secciones que tiene mi table view
        func numberOfSections(in tableView: UITableView) -> Int {
